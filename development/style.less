@@ -1,0 +1,113 @@
+.main-header {
+  background: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  &_container {
+    width: 1860px;
+    display: flex;
+    margin: auto auto;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+  }
+  &_nav-list {
+    display: flex;
+    flex-direction: row;
+    text-transform: capitalize;
+  }
+  &_nav-item {
+    margin-left: 40px;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.main-content {
+  background: #000000;
+  color: white;
+  &_container {
+    width: 1860px;
+    margin: 0 auto;
+  }
+  &_slider-list {
+    width: 1170px;
+    margin: 0 auto;
+  }
+  &_title {
+   font-family: 'Playfair Display', serif;
+   font-size: 80px;
+   font-weight: 400;
+   line-height: 95px;
+ }
+ &_sub-tittle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 48px;
+  margin: 10px 0 40px;
+  }
+  &_slider-item {
+  text-align: center;
+  margin-top: 255px;
+  margin-bottom: 280px;
+
+  }
+  &_button {
+    background-color: #eecd31;
+    border: none;
+    border-radius: 22px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    padding: 10px 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: #EECD63;  
+    }
+  }
+}
+
+.slider_button {
+    font-size: 120px;
+    position: absolute;
+    top: 435px;
+    cursor: pointer;
+}
+
+.slider_button__next {
+    right: -320px;
+}
+
+.slider_button__prev {
+    left: -320px;
+}
+.dots_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 35px;
+}
+
+
+.dots_list button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    border: none;
+    opacity: 0.55;
+
+}
+
+.dots_list .slick-active button {
+    opacity: 1;
+}
+.dots_list li:nth-child(2) {
+    margin: 0 25px; 
+}
